@@ -47,7 +47,7 @@ Giải mã base64 ta tìm được flag. Bạn dùng tool nào cũng được, �
 
 ![image](https://user-images.githubusercontent.com/56266496/206899909-1d3f7a4c-a1b4-43f6-8fff-71a135ce23d8.png)
 
-Ở đây mình dùng https://ezgif.com/split. Thông tin có được là `UTECTF{fL4g_here>}`. Nộp thử thì đây là fake.
+Ở đây mình dùng https://ezgif.com/split. Thông tin có được là `UTECTF{fL4g_here?}`. Nộp thử thì đây là fake.
 
 Hướng tiếp cận khác là mở rộng size ảnh trường hợp thông tin bị giấu ở phần mở rộng của ảnh. Để làm điều này cần đọc hiểu về cấu trúc file, keyword để research là `file format` hoặc `structure`.
 
