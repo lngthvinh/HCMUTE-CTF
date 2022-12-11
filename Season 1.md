@@ -7,22 +7,22 @@ Mỗi challenge mình sẽ đi vào hướng giải quyết trọng tâm để b
 Cảm ơn các bạn đã quan tâm.
 
 ### Overview
- | Title                                           | Category    | Flag |
- | :---------------------------------------------- | :---------- | :------ |
- | [impleKeygenV1.1](#SimpleKeygenV11)             | RE          |  |
- | [SimpleKeygenV2.0](#SimpleKeygenV20)            | RE          |  |
- | [EzCr4ckV2](#EzCr4ckV2)                         | RE          |  |
- | [humor laws](#humor-laws)                       | FORENSICS   |  |
- | [Gi_ #%$&](#Gi_-)                               | FORENSICS   |  |
- | [HOHO](#HOHO)                                   | MISC        |  |
- | [Source Code](#Source-Code)                     | WEB         |  |
- | [Web2](#Web2)                                   | WEB         |  |
- | [Web6](#Web6)                                   | WEB         |  |
- | [IPPBX](#IPPBX)                                 | NETWORKING  |  |
- | [Triangle](#Triangle)                           | PROGRAMMING |  |
- | [Bitcoin Address](#Bitcoin-Address)             | CRYPTO      |  |
- | [Exclusive or](#Exclusive-or)                   | CRYPTO      |  |
- | [Welcome to CTF HCMUTE](#Welcome-to-CTF-HCMUTE) | OSINT       |  |
+ | Title                                           | Category    | Flag                                          |
+ | :---------------------------------------------- | :---------- | :-------------------------------------------- |
+ | [impleKeygenV1.1](#SimpleKeygenV11)             | RE          |                                               |
+ | [SimpleKeygenV2.0](#SimpleKeygenV20)            | RE          |                                               |
+ | [EzCr4ckV2](#EzCr4ckV2)                         | RE          |                                               |
+ | [humor laws](#humor-laws)                       | FORENSICS   | UTECTF{r34D_Wr173_4nD_3D1t_M3t4_1Nf0rM4T10n}  |
+ | [Gi_ #%$&](#Gi_-)                               | FORENSICS   | UTECTF{1_c4n_s3e_1t}                          |
+ | [HOHO](#HOHO)                                   | MISC        |                                               |
+ | [Source Code](#Source-Code)                     | WEB         | UTECTF{hUm4n_r3@D4bl3_pr0gR@mm!nG_l4ngU4g3}   |
+ | [Web2](#Web2)                                   | WEB         | UTECTF{SyNt4X_h1gHl1ghT1n9_0f_4_f1L3}         |
+ | [Web6](#Web6)                                   | WEB         | UTECTF{w@k3uP_wH3n_4n_0bject_1z_uns3r!@L1z3d} |
+ | [IPPBX](#IPPBX)                                 | NETWORKING  | UTECTF{67287884604712}                        |
+ | [Triangle](#Triangle)                           | PROGRAMMING | UTECTF{cef44b46f16ae8ecf664df4266ffdbf9}      |
+ | [Bitcoin Address](#Bitcoin-Address)             | CRYPTO      | UTECTF{b1nAry_t0_T3xt_enC0D1n9}               |
+ | [Exclusive or](#Exclusive-or)                   | CRYPTO      | UTECTF{eXClus1V3_d1sJunct10n}                 |
+ | [Welcome to CTF HCMUTE](#Welcome-to-CTF-HCMUTE) | OSINT       | UTECTF{We3l.c.3m3_t00..0o_CTF_HCMUTE}         |
 
 # SimpleKeygenV1.1
 # SimpleKeygenV2.0
@@ -55,7 +55,7 @@ Hướng tiếp cận khác là mở rộng size ảnh trường hợp thông ti
 
 Theo thông tin đọc được, 1 file GIF có thể chứa nhiều hình ảnh. Ta có thể thay đổi size mỗi ảnh trong gif bằng cách thay đổi 2 block `image width` và `image height`.
 
-Một trong những công cụ dùng thay đổi cấu trúc 1 file là [HxD](https://mh-nexus.de/en/hxd/). Quan sát thi ở vị trí ảnh có nền trắng gần như có phần kéo dào xuống dưới.
+Một trong những công cụ dùng thay đổi cấu trúc 1 file là [HxD](https://mh-nexus.de/en/hxd/). Quan sát thi ở vị trí ảnh có nền trắng như là có phần kéo dài xuống dưới.
 Vậy ta thay đổi size ở vị trí ảnh này.
 
 ![image](https://user-images.githubusercontent.com/56266496/206900594-5ca9d4ca-7195-4a0e-8819-24c2b100e3dd.png)
@@ -131,7 +131,7 @@ Ta có thể dễ dàng control được biến `username` bên trong phương t
 
 ![image](https://user-images.githubusercontent.com/56266496/206901550-5db04361-eff9-4a63-91e5-51f1845c5e8c.png)
 
-Tạo payload cho biến `username`.
+Tạo payload cho biến `username` bằng cách chỉnh sửa lại đoạn code ngắn trên.
 
 ![image](https://user-images.githubusercontent.com/56266496/206901603-85674120-d853-475e-b192-d1dd13d0d61a.png)
 
@@ -174,7 +174,7 @@ Kết quả sẽ là: 3
 
 Công thức để giải bài toàn này là: `(4*n^3 + 6*n^2 - 4*n - 3 + 3*(-1)^n)/48`
 
-```
+```python
 #!/usr/bin/python3
 import socket
 
@@ -221,7 +221,7 @@ if __name__ == '__main__':
     main()
 ```
 
-Chương trình dùng giải programming này như trên.
+Chương trình dùng giải programming này như trên. Bạn đọc tham khảo và tự ngâm cứu thêm.
 
 ![image](https://user-images.githubusercontent.com/56266496/206903675-8ae6368b-c1e9-4d31-ae53-4aa5ddd37026.png)
 
